@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+   <strong>Insira o seu País</strong> <input type="pais" id="pais">
+   <input type="button" value="checar" onclick="check()">
+   <h4 id="res"></h4>
+   <script>
+     function check(){
+        var pais = document.querySelector('#pais')
+        var val = (pais.value)
+        var res = document.querySelector('#res')
+        if(val == 'Brasil'){
+            res.innerText ='Seu país é Brasileiro'
+        }
+        else{
+            res.innerText ='Seu país é Angolano'
+        }
+     }
+   </script>
+</body>
+</html>
